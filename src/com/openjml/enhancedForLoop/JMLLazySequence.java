@@ -30,7 +30,7 @@ public class JMLLazySequence<T> implements Iterable<T> {
                             throw new IndexOutOfBoundsException();
                         }
                     } else /* if seen.size() < i */ {
-                        while (seen.size() < i) {
+                        while (seen.size() <= i) {
                             if (iter.hasNext()) {
                                 seen.add(iter.next());
                             } else {
