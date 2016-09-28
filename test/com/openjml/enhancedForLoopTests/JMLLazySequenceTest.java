@@ -10,9 +10,11 @@ import com.openjml.enhancedForLoop.JMLLazySequence;
 
 public class JMLLazySequenceTest {
 	
+	private ArrayList<Integer> arr = new ArrayList<Integer>();
+	
+	
 	@Test
 	public void testiterator(){
-		ArrayList<Integer> arr = new ArrayList<Integer>();
 		arr.add(1);
 		arr.add(2);
 		arr.add(3);
@@ -27,7 +29,6 @@ public class JMLLazySequenceTest {
 	
 	@Test
 	public void testget(){
-		ArrayList<Integer> arr = new ArrayList<Integer>();
 		arr.add(1);
 		arr.add(2);
 		arr.add(3);
@@ -42,7 +43,6 @@ public class JMLLazySequenceTest {
 
 	@Test
 	public void testsize() {
-		ArrayList<Integer> arr = new ArrayList<Integer>();
 		arr.add(1);
 		arr.add(2);
 		arr.add(3);

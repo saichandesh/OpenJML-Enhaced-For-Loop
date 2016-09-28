@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/chandu/eclipse/jee-mars/eclipse/configuration/org.eclipse.osgi/971/0/.cp/jmlruntime.jar"/>
+	<classpathentry kind="lib" path="E:/Fall_2016/thesis/code/openjml/jmlspecs.jar"/>
+	<classpathentry kind="lib" path="E:/Fall_2016/thesis/code/openjml/openjml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
