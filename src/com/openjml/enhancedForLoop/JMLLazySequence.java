@@ -9,10 +9,13 @@ public class JMLLazySequence<T> implements Iterable<T> {
     private Func1<T> mapping;
     private Iterator<T> iter;
 	private ArrayList<T> seen = new ArrayList<T>();
+	private Iterable<T> iterable;
+
 
     public JMLLazySequence(Iterable<T> it) {
+    	iterable = it;
         iter = it.iterator();
-        
+       
         mapping =
             new Func1<T>() {
                 
@@ -116,4 +119,19 @@ public class JMLLazySequence<T> implements Iterable<T> {
             return i;
         }
     }
+    
+    public JMLLazySequence<T> potential(){
+    	JMLLazySequence<T> potential_seq = new JMLLazySequence<T>(iterable);
+    	return potential_seq;
+    }
+    
+    public ArrayList<T> previous(){ 
+    	return seen;
+    }
+    
+    public int current_index(){
+    	return seen.size();
+    }
+    
+  
 }
