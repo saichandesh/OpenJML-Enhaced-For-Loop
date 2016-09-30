@@ -3,6 +3,7 @@ package com.openjml.enhancedForLoopTests;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.junit.Test;
 
@@ -22,8 +23,13 @@ public class JMLLazySequenceTest {
 		
 		JMLLazySequence<Integer> seq = new JMLLazySequence<Integer>(arr);
 		
-		while(seq.iterator().hasNext()){
-			assertEquals(seq.iterator().next(),arr.iterator().next());
+		Iterator<Integer> it = seq.iterator();
+		Iterator<Integer> itr = arr.iterator();
+		
+		while(it.hasNext()){
+			Integer val = it.next();
+			System.out.println("next element"+val);
+			assertEquals(val,itr.next());
 		}
 	}
 	

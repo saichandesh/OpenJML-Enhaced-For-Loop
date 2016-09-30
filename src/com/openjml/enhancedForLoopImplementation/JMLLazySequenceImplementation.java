@@ -3,10 +3,6 @@ package com.openjml.enhancedForLoopImplementation;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.jmlspecs.lang.JML;
-import org.jmlspecs.lang.JMLList;
-import org.jmlspecs.models.JMLSequenceException;
-
 import com.openjml.enhancedForLoop.JMLLazySequence;
 
 
