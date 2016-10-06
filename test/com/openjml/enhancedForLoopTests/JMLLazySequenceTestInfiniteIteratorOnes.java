@@ -12,13 +12,14 @@ import com.openjml.enhancedForLoop.Ones;
 
 public class JMLLazySequenceTestInfiniteIteratorOnes {
 	
-	private Ones iterable = new Ones();
-	private JMLLazySequence<Integer> seq = new JMLLazySequence<Integer>(iterable);
+	private Ones iterable1 = new Ones();
+	private Ones iterable2 = new Ones();
+	private JMLLazySequence<Integer> seq = new JMLLazySequence<Integer>(iterable1);
 	
 	@Test
 	public void testiterator(){
 		Iterator<Integer> it = seq.iterator();
-		Iterator<Integer> itr = iterable.iterator();
+		Iterator<Integer> itr = iterable2.iterator();
 		int runloop =10;
 		
 		while(runloop>0){
@@ -38,7 +39,7 @@ public class JMLLazySequenceTestInfiniteIteratorOnes {
 	@Test
 	public void testpotential(){
 		JMLLazySequence<Integer> seq2 = seq.potential();
-		Iterator<Integer> itr1 = iterable.iterator();
+		Iterator<Integer> itr1 = iterable2.iterator();
 		Iterator<Integer> itr2 = seq2.iterator();
 		Integer exceptedOutput;
 		Integer actualOutput;

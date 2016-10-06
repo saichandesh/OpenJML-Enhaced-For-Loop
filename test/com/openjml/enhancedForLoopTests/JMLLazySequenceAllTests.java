@@ -9,4 +9,8 @@ import org.junit.runners.Suite.SuiteClasses;
 		JMLLazySequenceTestInfiniteIteratorOnes.class })
 public class JMLLazySequenceAllTests {
 
+	public static void main(String[] args) {
+		
+	}
+
 }

@@ -12,8 +12,7 @@ import com.openjml.enhancedForLoop.JMLLazySequence;
 
 public class JMLLazySequenceTestArrayList {
 
-	private ArrayList<Integer> arr = 
-					new ArrayList<Integer>(Arrays.asList(new Integer[] {1,2,3,4}));
+	private ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(new Integer[] {1,2,3,4}));
 	
 	private JMLLazySequence<Integer> seq = new JMLLazySequence<Integer>(arr);
 	
