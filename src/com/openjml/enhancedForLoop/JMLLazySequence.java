@@ -121,6 +121,7 @@ public class JMLLazySequence<T> implements Iterable<T> {
     }
     
     public JMLLazySequence<T> potential(){
+    	//JMLLazySequence<T> potential_seq = new JMLLazySequence<T>(iterable);
     	return this;
     }
     
