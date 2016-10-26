@@ -57,11 +57,11 @@ public class JMLLazySequenceTestInfiniteIteratorHalves {
 		Iterator<Double> itr = seq.iterator();
 		int i =0, runloop=10;
 		Double val;
-		ArrayList<Double> previous_seq = seq.previous();
+		//ArrayList<Double> previous_seq = seq.previous();
 		
 		while(itr.hasNext() && runloop>0){
 			val = itr.next();
-			assertEquals(val,previous_seq.get(i));
+			assertEquals(val,seq.previous().get(i));
 			i++;
 			runloop--;
 		}

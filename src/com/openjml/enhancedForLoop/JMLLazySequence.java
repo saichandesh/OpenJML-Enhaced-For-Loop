@@ -121,12 +121,11 @@ public class JMLLazySequence<T> implements Iterable<T> {
     }
     
     public JMLLazySequence<T> potential(){
-    	JMLLazySequence<T> potential_seq = new JMLLazySequence<T>(iterable);
-    	return potential_seq;
+    	return this;
     }
     
     public ArrayList<T> previous(){ 
-    	return seen;
+    	return (ArrayList<T>) (seen.clone());
     }
     
     public int current_index(){

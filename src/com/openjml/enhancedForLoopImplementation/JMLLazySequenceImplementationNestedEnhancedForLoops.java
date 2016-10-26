@@ -26,7 +26,7 @@ public class JMLLazySequenceImplementationNestedEnhancedForLoops {
 		System.out.println("-----Desugar the nested enhanced for loop----");
 		System.out.println("---------------------------------------------");
 		
-		JMLLazySequence<Integer> seq1 = new JMLLazySequence<>(arr1);
+		JMLLazySequence<Integer> seq1 = new JMLLazySequence<Integer>(arr1);
 		/*@ maintaining seq1.potential(), seq1.previous(), seq1.current_index();
 		  @ decreasing seq1.potential().size() - seq1.previous().size();
 		  @*/
@@ -36,7 +36,7 @@ public class JMLLazySequenceImplementationNestedEnhancedForLoops {
 		while(iter1.hasNext()){
 			val1 = iter1.next();
 			System.out.println("Value in the arr1 : "+ val1);
-			JMLLazySequence<Integer> seq2 = new JMLLazySequence<>(arr2);
+			JMLLazySequence<Integer> seq2 = new JMLLazySequence<Integer>(arr2);
 			/*@ maintaining seq2.potential(), seq2.previous(), seq2.current_index();
 			  @ decreasing seq2.potential().size() - seq2.previous().size();
 			  @*/

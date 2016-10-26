@@ -58,11 +58,11 @@ public class JMLLazySequenceTestInfiniteIteratorOnes {
 		Iterator<Integer> itr = seq.iterator();
 		int i =0, runloop=10;
 		Integer val;
-		ArrayList<Integer> previous_seq = seq.previous();
+		//ArrayList<Integer> previous_seq = seq.previous();
 		
 		while(itr.hasNext() && runloop>0){
 			val = itr.next();
-			assertEquals(val,previous_seq.get(i));
+			assertEquals(val,seq.previous().get(i));
 			i++;
 			runloop--;
 		}

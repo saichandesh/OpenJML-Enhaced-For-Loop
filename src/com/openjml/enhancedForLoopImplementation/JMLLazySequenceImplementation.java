@@ -23,7 +23,7 @@ public class JMLLazySequenceImplementation {
 		System.out.println("------Desugar the enhanced for loop----------");
 		System.out.println("---------------------------------------------");
 		
-		JMLLazySequence<Integer> seq = new JMLLazySequence<>(arr);
+		JMLLazySequence<Integer> seq = new JMLLazySequence<Integer>(arr);
 		/*@ maintaining seq.potential(), seq.previous(), seq.current_index();
 		  @ decreasing seq.potential().size() - seq.previous().size();
 		  @*/

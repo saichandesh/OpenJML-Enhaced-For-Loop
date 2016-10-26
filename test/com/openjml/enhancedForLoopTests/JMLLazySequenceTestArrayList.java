@@ -58,11 +58,12 @@ public class JMLLazySequenceTestArrayList {
 		Iterator<Integer> itr = seq.iterator();
 		int i =0;
 		Integer val;
-		ArrayList<Integer> previous_seq = seq.previous();
-		
+		//ArrayList<Integer> previous_seq = seq.previous();
+		//System.out.println(previous_seq);
 		while(itr.hasNext()){
 			val = itr.next();
-			assertEquals(val,previous_seq.get(i));
+			System.out.println(val);
+			assertEquals(val,seq.previous().get(i));
 			i++;
 		}
 	}
